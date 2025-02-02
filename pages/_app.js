@@ -1,7 +1,7 @@
 // pages/_app.js
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import '../styles/globals.css'; 
-import Script from 'next/script'; // Import Script for adding external scripts
+import Script from 'next/script'; 
 
 function MyApp({ Component, pageProps }) {
   return (
