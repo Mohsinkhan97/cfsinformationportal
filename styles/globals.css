@@ -1,0 +1,483 @@
+/* styles/globals.css */
+
+/* Set the primary and secondary colors */
+:root {
+    --primary-color: #26ABA3;
+    --secondary-color: #293039; /* Adjust if you want a different shade for secondary */
+  }
+  
+  /* Apply Open Sans as the global font family */
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff; /* Set background color (can be adjusted later) */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+  }
+  
+ 
+  /* Header Styling */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 8px 30px 0px rgba(38, 170, 163, 0.07);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 15px 0px 15px 0px;
+    z-index: 1000; /* Ensure the header stays on top */
+  }
+  
+  /* Logo on the left */
+  .logo-col {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .logo {
+    max-height: 40px; /* Adjust logo size */
+  }
+  
+  /* Center Menu */
+  .menu-col {
+    text-align: center;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effect on menu items */
+  .menu a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Phone section on the right */
+  .phone-col {
+    text-align: right;
+  }
+  
+  .phone-number {
+    color: var(--primary-color);
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-number i {
+    margin-right: 8px; /* Space between icon and number */
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    rotate: 90deg;
+  }
+  
+  /* Media query to adjust header for smaller screens */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin: 5px 0;
+    }
+  
+    .logo-col,
+    .phone-col {
+      text-align: center;
+    }
+  }
+
+
+
+  /* Footer styles */
+.footer {
+    background-color:var(--primary-color); /* Primary color */
+    color: white;
+    padding: 40px 0 4px;
+  }
+  
+  .footer-logo {
+    width: 150px; /* Adjust logo size */
+    margin-bottom: 10px;
+  }
+  
+  .footer-info {
+    font-size: 14px;
+  }
+  
+  .footer-heading {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-contact {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-contact:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icon i {
+    background-color: white;
+  color:var(--primary-color); /* Primary color */
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+ 
+  text-align: center;
+  }
+  
+  .social-icon i:hover {
+    background-color:var(--primary);
+    color: white;
+  }
+  
+  .footer-separator {
+    border: 0;
+    border-top: 1px solid white;
+    margin: 20px 0;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+
+
+
+  .hero {
+    background-image: url('/images/hero-bg.webp');
+    background-size: cover;
+    background-position: top center;
+    height: 99vh;
+    padding: 100px 0;
+    color: white;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    z-index: 3;
+   
+  }
+  
+  .hero-title {
+    font-size: 60px;
+    font-weight:bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+width: 80%;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .hero-button {
+    font-size: 15px;
+    padding: 10px 80px;
+    border-radius: 50px;
+  }
+  
+  .hero-button:first-child {
+    background-color:var(--primary); /* Primary color */
+    color: white;
+  }
+  
+  .hero-button:last-child {
+    background-color: transparent; /* Light color for secondary button */
+    color: #fff; /* Primary color for text */
+    border: 1px solid #fff;
+  
+  }
+  
+  .hero-button:hover {
+    background-color: #fff; /* Light color for secondary button */
+    color:var(--primary-color); /* Primary color for text */
+    border: 1px solid #fff;
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+
+  .about-section {
+   
+    padding: 80px 0;
+    color: white;
+  }
+  
+  .about-img {
+    width: 100%;
+    border-radius: 150px 0px 0px 0px;
+    object-fit: cover;
+  }
+  .about-section .content-area{
+    padding-left: 50px;
+  }
+  .sub-heading {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  .main-heading {
+    font-size: 32px;
+    font-weight: 700;
+  color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  color: var(--secondary-color);
+  }
+  
+  .about-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color:#fff;
+    padding: 10px 46px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .about-btn:hover {
+    background-color:#fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+
+
+
+  .services-section{
+    background: var(--primary-color);
+    padding: 50px;
+  }
+
+.services-section h2 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.services-section p{
+  color: #fff;
+  font-size: 18px;
+  width: 75%;
+}
+.services-section .servicescard{
+  background: #fff;
+    margin-bottom: 20px;
+    border-radius: 1px;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 17px;
+}
+.services-section .card-title{
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+.services-section .card-desc{
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+}
+.services-section .cardbtn{
+background: var(--primary-color);
+border: 1px solid #fff;
+border-radius: 50px;
+font-size: 15px;
+padding: 8px 40px;
+font-weight: 600;
+}
+.services-section .cardbtn:hover{
+  background: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.servicescardcontainer .servicescard{
+  position: sticky;
+}
+.servicescardcontainer .servicescard:first-child {
+ 
+}
+.servicescardcontainer .servicescard:nth-child(2){
+  top: 90px;
+}
+.servicescardcontainer .servicescard:nth-child(3){
+  top: 130px;
+}
+.servicescardcontainer .servicescard:nth-child(4){
+  top: 170px;
+}
+.servicescardcontainer .servicescard:nth-child(5){
+  top: 210px;
+}
+
+
+/* styles/globals.css or a separate CSS file */
+.testimonial-section {
+  padding: 50px 0;
+  background-color: #f9fafb;
+}
+
+.testimonial-section .owl-carousel .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.testimonial-section .owl-carousel .item:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.testimonial-section .owl-carousel .item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-section .owl-carousel .item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+}
+
+.testimonial-section .owl-carousel .item p {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.testimonial-section .owl-carousel .item .mt-2 {
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+.testimonial-section .owl-carousel .item .mt-2 span {
+  margin-right: 4px;
+}
+
+.testimonial-section .owl-carousel .item.center {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-section .owl-carousel .item:not(.center) {
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+.testimonial-section .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.testimonial-section .owl-carousel .owl-nav .owl-prev,
+.testimonial-section .owl-carousel .owl-nav .owl-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.testimonial-section h2 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
