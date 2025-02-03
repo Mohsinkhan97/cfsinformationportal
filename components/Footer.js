@@ -11,8 +11,9 @@ const Footer = () => {
         <Row>
           {/* First column - Logo and info */}
           <Col md={4} className="footer-col">
-            <img src="/logo.png" alt="Logo" className="footer-logo" />
-            <p className="footer-info">Your trusted source for ME/CFS information and alternative therapies.</p>
+            {/* <img src="/logo.png" alt="Logo" className="footer-logo" /> */}
+            <h3 style={{fontSize:'26px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0'}}>cfs information portal</h3>
+            <p className="footer-info">CFS Information Portal – Providing community-based therapies for individuals with incurable conditions. Empowering lives with care and support.</p>
           </Col>
 
           {/* Second column - Quick links */}
@@ -29,12 +30,14 @@ const Footer = () => {
 
           {/* Third column - Services */}
           <Col md={2} className="footer-col">
-            <h5 className="footer-heading">Services</h5>
+            <h5 className="footer-heading">Therapies</h5>
             <ul className="footer-links">
-              <li><Link href="/services/medical-consultation">Medical Consultation</Link></li>
-              <li><Link href="/services/wellness-coaching">Wellness Coaching</Link></li>
-              <li><Link href="/services/alternative-medicine">Alternative Medicine</Link></li>
-              <li><Link href="/services/physical-therapy">Physical Therapy</Link></li>
+            <li><Link href="/services/cognitive-behavioral-therapy">Cognitive Behavioral Therapy (CBT)</Link></li>
+<li><Link href="/services/mindfulness-based-stress-reduction">Mindfulness-Based Stress Reduction (MBSR)</Link></li>
+<li><Link href="/services/physiotherapy-movement-therapy">Physiotherapy & Movement Therapy</Link></li>
+<li><Link href="/services/nutritional-therapy">Nutritional Therapy</Link></li>
+<li><Link href="/services/art-music-therapy">Art & Music Therapy</Link></li>
+
             </ul>
           </Col>
 

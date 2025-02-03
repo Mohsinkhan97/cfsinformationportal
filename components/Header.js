@@ -7,10 +7,11 @@ const Header = () => {
   return (
     <header className="sticky-header">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-baseline">
           {/* Logo on the left */}
           <Col xs={2} className="logo-col">
-            <img src="/logo.png" alt="Logo" className="logo" />
+            {/* <img src="/logo.png" alt="Logo" className="logo" /> */}
+            <h3 style={{fontSize:'16px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0'}}>cfs information portal</h3>
           </Col>
 
           {/* Menu in the center */}
