@@ -10,11 +10,11 @@ import Image from "next/image";
 const HomePage = () => {
  
   const services = [
-    { title: "General Checkup", desc: "Get a full body checkup to ensure you're in great health.",className:'one' },
-    { title: "Dental Care", desc: "Comprehensive dental care services to maintain your oral health.",className:'two' },
-    { title: "Cardiology", desc: "Advanced heart care services with expert consultation.",className:'three'},
-    { title: "Pediatrics", desc: "Quality healthcare services for children and infants.",className:'four' },
-    { title: "Dermatology", desc: "Skin treatment and consultations from top dermatologists.",className:'five' }
+    { title: "Cognitive Behavioral Therapy (CBT)", desc: "Helps patients manage symptoms by changing negative thought patterns and behaviors. Useful for conditions like Chronic Fatigue Syndrome (CFS), Fibromyalgia, and chronic pain.",className:'one' },
+    { title: "Mindfulness-Based Stress Reduction (MBSR)", desc: "A meditation and relaxation therapy that helps reduce stress and improve overall well-being. Supports individuals with conditions like Multiple Sclerosis (MS), Parkinson’s, and chronic pain disorders.",className:'two' },
+    { title: "Physiotherapy & Movement Therapy", desc: "Involves gentle exercises and physical therapy to maintain mobility and reduce discomfort. Beneficial for people with conditions like ALS, Muscular Dystrophy, and severe arthritis.",className:'three'},
+    { title: "Nutritional Therapy", desc: "Focuses on diet adjustments to boost energy, improve immune function, and enhance quality of life. Useful for conditions like CFS, autoimmune disorders, and metabolic diseases.",className:'four' },
+    { title: "Art & Music Therapy", desc: "Encourages self-expression and emotional healing through creative activities. Helps patients with neurological disorders, mental health conditions, and chronic illnesses cope better.",className:'five' }
   ];
   const testimonials = [
     {
@@ -140,9 +140,9 @@ const HomePage = () => {
         <Row className="align-items-start">
           {/* Left Column: Heading & Short Paragraph */}
           <Col md={6}>
-            <h2 className="">Our Services</h2>
+            <h2 className="">Our Therapies</h2>
             <p className="">
-              Explore our wide range of medical services designed to provide top-notch healthcare solutions for you and your family.
+              Explore our wide range of medical therapies designed to provide top-notch healthcare solutions for you and your family.
             </p>
           </Col>
 
