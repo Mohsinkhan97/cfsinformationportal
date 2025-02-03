@@ -1,7 +1,7 @@
 // components/Header.js
 import React from 'react';
 import Link from 'next/link'; // Importing Link for client-side navigation
-import { Container, Row, Col } from 'react-bootstrap'; // Importing Bootstrap grid components
+import { Container, Row, Col,Button } from 'react-bootstrap'; // Importing Bootstrap grid components
 
 const Header = () => {
   return (
@@ -9,13 +9,13 @@ const Header = () => {
       <Container>
         <Row className="align-items-baseline">
           {/* Logo on the left */}
-          <Col xs={2} className="logo-col">
+          <Col xs={3} className="logo-col">
             {/* <img src="/logo.png" alt="Logo" className="logo" /> */}
-            <h3 style={{fontSize:'16px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0'}}>cfs information portal</h3>
+            <h3 style={{fontSize:'20px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0'}}>cfs information portal</h3>
           </Col>
 
           {/* Menu in the center */}
-          <Col xs={8} className="text-center menu-col">
+          <Col xs={7} className="text-center menu-col">
             <nav>
               <ul className="menu">
                 <li>
@@ -39,9 +39,11 @@ const Header = () => {
 
           {/* Phone number on the right */}
           <Col xs={2} className="text-right phone-col">
-            <a href="tel:+123456789" className="phone-number">
-              <i className="fas fa-phone"></i> +123 456 789
-            </a>
+          <Link href="/information">
+                 
+                 <Button variant="primary" className="loginbbtn">Login</Button>
+              
+             </Link>
           </Col>
         </Row>
       </Container>

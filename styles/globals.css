@@ -71,9 +71,20 @@
   
   /* Phone section on the right */
   .phone-col {
-    text-align: right;
+    text-align: left;
   }
-  
+  .loginbbtn{
+    background: var(--primary-color);
+    padding: 10px 40px;
+    font-size: 18px;
+    border: 1px solid var(--primary-color);
+    font-weight: 600;
+  }
+  .loginbbtn:hover{
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
   .phone-number {
     color: var(--primary-color);
     font-size: 16px;
