@@ -114,7 +114,7 @@ const HomePage = () => {
           <div className="col-md-6">
             <div className='content-area'>
             <h4 className="sub-heading">Who We Are</h4>
-            <h2 className="main-heading">Your Trusted Medical Partner</h2>
+            <h2 className="main-heading">Your Trusted  Partner</h2>
             <p className="about-text">
               Our mission is to provide top-notch healthcare services with a focus on 
               patient-centered care. With a dedicated team of experienced professionals, 

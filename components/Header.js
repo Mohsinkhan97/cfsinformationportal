@@ -11,7 +11,7 @@ const Header = () => {
           {/* Logo on the left */}
           <Col xs={3} className="logo-col">
             {/* <img src="/logo.png" alt="Logo" className="logo" /> */}
-            <h3 style={{fontSize:'20px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0'}}>cfs information portal</h3>
+            <h3 style={{fontSize:'20px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0',color:'var(--primary-color)'}}>cfs information portal</h3>
           </Col>
 
           {/* Menu in the center */}
@@ -22,11 +22,9 @@ const Header = () => {
                   <Link href="index">Home</Link>
                 </li>
                 <li>
-                  <Link href="/information">Information</Link>
+                  <Link href="/information">Information (A-z)</Link>
                 </li>
-                <li>
-                  <Link href="#alternative-therapies">Alternative Therapies</Link>
-                </li>
+               
                 <li>
                   <Link href="/blog">Blog</Link>
                 </li>
@@ -41,7 +39,7 @@ const Header = () => {
           <Col xs={2} className="text-right phone-col">
           <Link href="/information">
                  
-                 <Button variant="primary" className="loginbbtn">Login</Button>
+                 <Button variant="primary" className="loginbbtn">Membership</Button>
               
              </Link>
           </Col>

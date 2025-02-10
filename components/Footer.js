@@ -18,19 +18,24 @@ const Footer = () => {
 
           {/* Second column - Quick links */}
           <Col md={2} className="footer-col">
-            <h5 className="footer-heading">Quick Links</h5>
+            {/* <h5 className="footer-heading">Quick Links</h5> */}
             <ul className="footer-links">
-              <li><Link href="/">Home</Link></li>
+              {/* <li><Link href="/">Home</Link></li>
               <li><Link href="/information">Information</Link></li>
-              <li><Link href="/alternative-therapies">Alternative Therapies</Link></li>
+              <li><Link href="/alternative-therapies">Your Feedback on Therapies</Link></li>
               <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/contact">Contact</Link></li> */}
+              <li><Link href="#"> Membership</Link></li>
+              <li><Link href="#"> Privacy Policy</Link></li>
+              <li><Link href="#"> Terms & Conditions</Link></li>
+              <li><Link href="#">  Disclaimer</Link></li>
+             
             </ul>
           </Col>
 
           {/* Third column - Services */}
           <Col md={2} className="footer-col">
-            <h5 className="footer-heading">Therapies</h5>
+            {/* <h5 className="footer-heading">Therapies</h5>
             <ul className="footer-links">
             <li><Link href="/services/cognitive-behavioral-therapy">Cognitive Behavioral Therapy (CBT)</Link></li>
 <li><Link href="/services/mindfulness-based-stress-reduction">Mindfulness-Based Stress Reduction (MBSR)</Link></li>
@@ -38,13 +43,13 @@ const Footer = () => {
 <li><Link href="/services/nutritional-therapy">Nutritional Therapy</Link></li>
 <li><Link href="/services/art-music-therapy">Art & Music Therapy</Link></li>
 
-            </ul>
+            </ul> */}
           </Col>
 
           {/* Fourth column - Contact us */}
           <Col md={4} className="footer-col">
             <h5 className="footer-heading">Contact Us</h5>
-            <p><FaPhoneAlt /> <a href="tel:+123456789" className="footer-contact">+123 456 789</a></p>
+            {/* <p><FaPhoneAlt /> <a href="tel:+123456789" className="footer-contact">+123 456 789</a></p> */}
             <p><FaEnvelope /> <a href="mailto:info@cfsinformationportal.com" className="footer-contact">info@cfsinformationportal.com</a></p>
             <div className="footer-social-icons">
               {/* Using Font Awesome CDN icons for social media */}
