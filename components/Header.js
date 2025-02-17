@@ -6,7 +6,7 @@ import { Container, Row, Col,Button } from 'react-bootstrap'; // Importing Boots
 const Header = () => {
   return (
     <header className="sticky-header">
-      <Container>
+      <Container fluid>
         <Row className="align-items-baseline">
           {/* Logo on the left */}
           <Col xs={3} className="logo-col">
@@ -18,13 +18,16 @@ const Header = () => {
           <Col xs={7} className="text-center menu-col">
             <nav>
               <ul className="menu">
-                <li>
-                  <Link href="index">Home</Link>
-                </li>
+               
                 <li>
                   <Link href="/information">Information (A-z)</Link>
                 </li>
-               
+                <li>
+                  <Link href="#">Your Feedback on Treatment</Link>
+                </li>
+                <li>
+                  <Link href="#">Your Suggestions</Link>
+                </li>
                 <li>
                   <Link href="/blog">Blog</Link>
                 </li>

@@ -101,19 +101,19 @@ const HomePage = () => {
         <div className="row align-items-center">
           {/* Left Column - Image */}
           <div className="col-md-6">
-            <Image
+            {/* <Image
               src="/images/about.webp"
               alt="About Us"
               width={500}
               height={500}
               className="about-img"
-            />
+            /> */}
           </div>
 
           {/* Right Column - Content */}
           <div className="col-md-6">
             <div className='content-area'>
-            <h4 className="sub-heading">Who We Are</h4>
+            <h4 className="sub-heading">About Us</h4>
             <h2 className="main-heading">Your Trusted  Partner</h2>
             <p className="about-text">
               Our mission is to provide top-notch healthcare services with a focus on 
@@ -140,7 +140,7 @@ const HomePage = () => {
         <Row className="align-items-start">
           {/* Left Column: Heading & Short Paragraph */}
           <Col md={6}>
-            <h2 className="">Our Therapies</h2>
+            <h2 className="">Information (A-z)</h2>
             <p className="">
               Explore our wide range of medical therapies designed to provide top-notch healthcare solutions for you and your family.
             </p>
