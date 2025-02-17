@@ -23,7 +23,9 @@ const Header = () => {
           <Col xs={7} className="text-center menu-col">
             <nav>
               <ul className="menu">
-               
+              <li>
+                  <Link href="#">Home</Link>
+                </li>
                 <li>
                   <Link href="/information">Information (A-z)</Link>
                 </li>

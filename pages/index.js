@@ -10,11 +10,11 @@ import Image from "next/image";
 const HomePage = () => {
  
   const services = [
-    { title: "Cognitive Behavioral Therapy (CBT)", desc: "Helps patients manage symptoms by changing negative thought patterns and behaviors. Useful for conditions like Chronic Fatigue Syndrome (CFS), Fibromyalgia, and chronic pain.",className:'one' },
-    { title: "Mindfulness-Based Stress Reduction (MBSR)", desc: "A meditation and relaxation therapy that helps reduce stress and improve overall well-being. Supports individuals with conditions like Multiple Sclerosis (MS), Parkinson’s, and chronic pain disorders.",className:'two' },
-    { title: "Physiotherapy & Movement Therapy", desc: "Involves gentle exercises and physical therapy to maintain mobility and reduce discomfort. Beneficial for people with conditions like ALS, Muscular Dystrophy, and severe arthritis.",className:'three'},
-    { title: "Nutritional Therapy", desc: "Focuses on diet adjustments to boost energy, improve immune function, and enhance quality of life. Useful for conditions like CFS, autoimmune disorders, and metabolic diseases.",className:'four' },
-    { title: "Art & Music Therapy", desc: "Encourages self-expression and emotional healing through creative activities. Helps patients with neurological disorders, mental health conditions, and chronic illnesses cope better.",className:'five' }
+    { title: "Symptoms & Diagnosis", desc: "",className:'one' },
+    { title: "Finance", desc: "",className:'two' },
+    { title: "Mental Health", desc: "",className:'three'},
+    { title: "Sleep", desc: "",className:'four' },
+    { title: "Nutrition", desc: "",className:'five' }
   ];
   const testimonials = [
     {
@@ -140,7 +140,7 @@ const HomePage = () => {
         <Row className="align-items-start">
           {/* Left Column: Heading & Short Paragraph */}
           <Col md={6}>
-            <h2 className="">Information (A-z)</h2>
+            <h2 className="">Information (A-Z)</h2>
             <p className="">
               Explore our wide range of medical therapies designed to provide top-notch healthcare solutions for you and your family.
             </p>
@@ -165,7 +165,7 @@ const HomePage = () => {
         </Row>
       </Container>
     </section>
-    <section className="testimonial-section">
+    {/* <section className="testimonial-section">
         <Container>
           <Row>
           <h2 className="">Real Stories, Real Healing</h2>
@@ -191,7 +191,7 @@ const HomePage = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
     </div>
       <Footer />
     </>
