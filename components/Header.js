@@ -2,16 +2,21 @@
 import React from 'react';
 import Link from 'next/link'; // Importing Link for client-side navigation
 import { Container, Row, Col,Button } from 'react-bootstrap'; // Importing Bootstrap grid components
-
+import Image from 'next/image';
 const Header = () => {
   return (
     <header className="sticky-header">
       <Container fluid>
-        <Row className="align-items-baseline">
+        <Row className="align-items-center">
           {/* Logo on the left */}
           <Col xs={3} className="logo-col">
-            {/* <img src="/logo.png" alt="Logo" className="logo" /> */}
-            <h3 style={{fontSize:'20px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0',color:'var(--primary-color)'}}>cfs information portal</h3>
+          <img 
+    src="/images/logo.png" 
+    alt="Logo" 
+    className="logo" 
+   
+  />
+            {/* <h3 style={{fontSize:'20px',textTransform:'uppercase',fontWeight:'bold',marginBottom:'0',color:'var(--primary-color)'}}>cfs information portal</h3> */}
           </Col>
 
           {/* Menu in the center */}
