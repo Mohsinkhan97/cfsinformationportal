@@ -10,12 +10,21 @@ import Image from "next/image";
 const HomePage = () => {
  
   const services = [
-    { title: "Symptoms & Diagnosis", desc: "",className:'one' },
-    { title: "Finance", desc: "",className:'two' },
-    { title: "Mental Health", desc: "",className:'three'},
-    { title: "Sleep", desc: "",className:'four' },
-    { title: "Nutrition", desc: "",className:'five' }
+    { title: "Symptoms & Diagnosis", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'one' },
+    { title: "Finance", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'two' },
+    { title: "Universal Credit", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'three' },
+    { title: "Mental Health", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'four' },
+    { title: "Sleep", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'five' },
+    { title: "Nutrition", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'six' },
+    { title: "Exercise", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'seven' },
+    { title: "Breathing techniques", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'eight' },
+    { title: "Pain: Heat, Cold, and Other Non-Drug Forms of Pain Relief", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'nine' },
+    { title: "Pacing", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'ten' },
+    { title: "Other organisations self-help websites", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'eleven' },
+    { title: "Books & Videos", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'twelve' },
+    { title: "Technology", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'thirteen' }
   ];
+  
   const testimonials = [
     {
       name: "John Doe",
