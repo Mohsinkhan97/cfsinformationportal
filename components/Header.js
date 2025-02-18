@@ -10,7 +10,7 @@ const Header = () => {
       <Container fluid>
         <Row className="align-items-center">
           {/* Logo on the left */}
-          <Col xs={8} className="logo-col">
+          <Col xs={6} className="logo-col">
           <img 
     src="/images/logo.png" 
     alt="Logo" 
@@ -35,7 +35,7 @@ const Header = () => {
       </button>
     </Link>
           </Col>
-          <Col xs={1} className="">
+          <Col xs={3} className="">
           <img 
     src="/images/me-logo.png" 
     alt="Logo" 

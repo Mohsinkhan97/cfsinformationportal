@@ -70,7 +70,7 @@
   
   /* Phone section on the right */
   .phone-col {
-    text-align: left;
+    text-align: right;
   }
   .loginbbtn{
     background: var(--primary-color);
