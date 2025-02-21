@@ -153,12 +153,17 @@ const HomePage = () => {
       <Container>
         <Row className="align-items-start">
           {/* Left Column: Heading & Short Paragraph */}
-          <Col md={6}>
+          <Col md={6} style={{position:'sticky',top:'120px'}}>
             <h2 className="">Information (A-Z)</h2>
             <p className="">
               Explore our wide range of medical therapies designed to provide top-notch healthcare solutions for you and your family.
             </p>
-            <div className='servicescardcontainer'>
+          
+          </Col>
+
+          {/* Right Column: Sticky Scroll Cards */}
+          <Col md={6} >
+          <div className='servicescardcontainer'>
               {services.map((service, index) => (
                 <Card key={index} className="servicescard">
                   <Card.Body>
@@ -172,13 +177,23 @@ const HomePage = () => {
               ))}
             </div>
           </Col>
-
-          {/* Right Column: Sticky Scroll Cards */}
-          <Col md={6}>
+        </Row>
+      </Container>
+    </section>
+    <section className="services-section" style={{marginTop:'50px'}}>
+      <Container>
+        <Row className="align-items-start">
+          {/* Left Column: Heading & Short Paragraph */}
+          <Col md={6} style={{position:'sticky',top:'120px'}}>
           <h2 className="">Alternative Therapies</h2>
             <p className="">
             Alternative therapies encompass a range of holistic healing practices that complement or replace conventional medicine.
             </p>
+          </Col>
+
+          {/* Right Column: Sticky Scroll Cards */}
+          <Col md={6}>
+        
             <div className='servicescardcontainer'>
               {servicestwo.map((service, index) => (
                 <Card key={index} className="servicescard">

@@ -58,7 +58,7 @@ const Header = () => {
             <nav>
               <ul className="menu">
               <li>
-                  <Link href="#">Home</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
                   <Link href="/information">Information (A-z)</Link>
