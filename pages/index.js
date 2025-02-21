@@ -24,7 +24,12 @@ const HomePage = () => {
     { title: "Books & Videos", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'twelve' },
     { title: "Technology", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'thirteen' }
   ];
-  
+  const servicestwo = [
+    { title: "Perrin Technique", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'one' },
+    { title: "Acupuncture", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'two' },
+    { title: "Oxygen therapy", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'three' },
+    { title: "Companies", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore", className: 'four' }
+  ];
   const testimonials = [
     {
       name: "John Doe",
@@ -153,12 +158,29 @@ const HomePage = () => {
             <p className="">
               Explore our wide range of medical therapies designed to provide top-notch healthcare solutions for you and your family.
             </p>
+            <div className='servicescardcontainer'>
+              {services.map((service, index) => (
+                <Card key={index} className="servicescard">
+                  <Card.Body>
+                    <Card.Title className='card-title'>{service.title}</Card.Title>
+                    <Card.Text className='card-desc'>{service.desc}</Card.Text>
+                    <Button  className="cardbtn">
+                      Learn More
+                    </Button>
+                  </Card.Body>
+                </Card>
+              ))}
+            </div>
           </Col>
 
           {/* Right Column: Sticky Scroll Cards */}
           <Col md={6}>
+          <h2 className="">Alternative Therapies</h2>
+            <p className="">
+            Alternative therapies encompass a range of holistic healing practices that complement or replace conventional medicine.
+            </p>
             <div className='servicescardcontainer'>
-              {services.map((service, index) => (
+              {servicestwo.map((service, index) => (
                 <Card key={index} className="servicescard">
                   <Card.Body>
                     <Card.Title className='card-title'>{service.title}</Card.Title>

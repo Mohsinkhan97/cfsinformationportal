@@ -26,7 +26,7 @@ const Footer = () => {
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/contact">Contact</Link></li> */}
               <li><Link href="#"> Membership</Link></li>
-              <li><Link href="#"> Your feedback on Therapies</Link></li>      
+             
               <li><Link href="#"> Privacy Policy</Link></li>
               <li><Link href="#"> Terms & Conditions</Link></li>
               <li><Link href="#">  Disclaimer</Link></li>
