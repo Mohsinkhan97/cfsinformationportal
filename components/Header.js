@@ -63,9 +63,7 @@ const Header = () => {
                 <li>
                   <Link href="/information">Information (A-z)</Link>
                 </li>
-                <li>
-                  <Link href="#">Your Feedback on Treatment</Link>
-                </li>
+               
                 <li>
                   <Link href="#">Alternative Therapies</Link>
                 </li>
