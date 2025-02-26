@@ -180,7 +180,7 @@ const HomePage = () => {
         </Row>
       </Container>
     </section>
-    <section className="services-section" style={{marginTop:'50px'}}>
+    <section className="services-section" style={{marginTop:'50px',background: '#1b7771'}}>
       <Container>
         <Row className="align-items-start">
           {/* Left Column: Heading & Short Paragraph */}
